@@ -3,18 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Título de la página</title>
-  <!-- Puedes incluir aquí enlaces a estilos CSS o scripts -->
-  <link rel="stylesheet" href="estilos.css">
+  <meta name="description" content="Proyecto Web - Versión 2">
+  <meta name="author" content="Tu nombre o empresa">
+  <title>Proyecto Web | Versión 2</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Librerías externas (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <!-- Encabezado principal -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo del Proyecto">
+        <h1>Proyecto Web v2</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <h1>Hola mundo</h1>
-  <p>Este es un documento HTML básico.</p>
+  <!-- Sección principal -->
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h2>Bienvenido a la Versión 2</h2>
+        <p>Un punto de partida moderno y adaptable para tu nuevo proyecto.</p>
+        <a href="#nosotros" class="btn">Conocer más</a>
+      </div>
+    </section>
 
-  <!-- Aquí puedes agregar más contenido como imágenes, enlaces, formularios, etc. -->
+    <section id="nosotros" class="about">
+      <div class="container">
+        <h2>Sobre Nosotros</h2>
+        <p>Aquí puedes escribir una breve descripción sobre tu equipo o empresa.</p>
+      </div>
+    </section>
 
-  <!-- Scripts JS opcionales al final del body -->
-  <script src="script.js"></script>
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2>Servicios</h2>
+        <ul>
+          <li>Diseño Web</li>
+          <li>Desarrollo Frontend</li>
+          <li>Aplicaciones Web</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="correo" placeholder="Tu correo" required>
+          <textarea name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Proyecto Web v2 - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
+
